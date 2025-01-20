@@ -27,7 +27,7 @@ const VideoCarousel = () => {
     gsap.to("#slider", {
       transform: `translateX(${-100 * videoId}%)`,
       duration: 2,
-      ease: "power2.inOut",
+      ease: "power2.inOut", 
     });
 
     gsap.to("#video", {
@@ -60,10 +60,10 @@ const VideoCarousel = () => {
             gsap.to(videoDivRef.current[videoId], {
               width:
                 window.innerWidth < 760
-                  ? "10vw"
+                  ? "10vw" 
                   : window.innerWidth < 1200
-                  ? "10vw"
-                  : "4vw",
+                  ? "10vw" 
+                  : "4vw", 
             });
 
             gsap.to(span[videoId], {
@@ -148,12 +148,12 @@ const VideoCarousel = () => {
       <div className="flex items-center">
         {hightlightsSlides.map((list, i) => (
           <div key={list.id} id="slider" className="sm:pr-20 pr-10">
-            <div className="relative w-full h-screen video-carousel_container">
+            <div className="video-carousel_container">
               <div className="w-full h-full flex-center rounded-3xl overflow-hidden bg-black">
                 <video
                   id="video"
                   playsInline={true}
-                  className={`w-full h-full object-cover ${
+                  className={`${
                     list.id === 2 && "translate-x-44"
                   } pointer-events-none`}
                   preload="auto"
@@ -215,19 +215,6 @@ const VideoCarousel = () => {
           />
         </button>
       </div>
-
-      <style jsx>{`
-        .video-carousel_container {
-          position: relative;
-          overflow: hidden;
-        }
-        
-        .video-carousel_container video {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      `}</style>
     </>
   );
 };
