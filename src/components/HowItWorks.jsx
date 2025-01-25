@@ -71,6 +71,7 @@ const HowItWorks = () => {
                                 preload='none'
                                 muted
                                 autoPlay
+                                loop
                                 ref={videoRef}
                             >
                                 <source 
