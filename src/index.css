@@ -75,7 +75,7 @@ canvas {
   }
 
   .feature-video-container {
-    @apply w-full flex flex-col md:flex-row gap-5 items-center
+    @apply w-full flex flex-col md:flex-row gap-5 items-center mt-5
   }
 
   .link {
