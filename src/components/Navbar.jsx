@@ -6,39 +6,61 @@ const Navbar = () => {
     return (
         <header className='w-full py-5 sm:pw-10 px-5 flex justify-between items-center'>
             <nav className='flex w-full screen-max-width'>
-                <img 
-                    src={appleImg} 
-                    alt='Apple'
-                    width={14}
-                    height={18}
+                {/* Logo Apple */}
+                <a 
+                    href="#" 
+                    onClick={(e) => e.preventDefault()}
                     className='cursor-pointer'
-                />
+                >
+                    <img 
+                        src={appleImg} 
+                        alt='Apple'
+                        width={14}
+                        height={18}
+                    />
+                </a>
 
+                {/* Liens de navigation */}
                 <div className='flex flex-1 justify-center max-sm:hidden'>
                     {navLists.map((nav) => (
-                        <div 
+                        <a
                             key={nav}
+                            href="#"
+                            onClick={(e) => e.preventDefault()}
                             className='cursor-pointer px-5 text-sm text-gray hover:text-white transition-all'
                         >
                             {nav}
-                        </div>
+                        </a>
                     ))}
                 </div>
 
-                <div className='cursor-pointer flex items-baseline gap-7 max-sm:justify-end max-sm:flex-1'>
-                    <img 
-                        src={searchImg} 
-                        alt="search"
-                        width={18}
-                        height={18}
-                    />
+                {/* Liens pour la recherche et le panier */}
+                <div className='flex items-baseline gap-7 max-sm:justify-end max-sm:flex-1'>
+                    <a 
+                        href="#" 
+                        onClick={(e) => e.preventDefault()}
+                    >
+                        <img 
+                            src={searchImg} 
+                            alt="search"
+                            width={18}
+                            height={18}
+                            className='opacity-50 hover:opacity-100 transition-opacity'
+                        />
+                    </a>
 
-                    <img 
-                        src={bagImg}
-                        alt="bag"
-                        width={18}
-                        height={18}
-                    />
+                    <a 
+                        href="#" 
+                        onClick={(e) => e.preventDefault()}
+                    >
+                        <img 
+                            src={bagImg}
+                            alt="bag"
+                            width={18}
+                            height={18}
+                            className='opacity-50 hover:opacity-100 transition-opacity'
+                        />
+                    </a>
                 </div>
             </nav>
         </header>

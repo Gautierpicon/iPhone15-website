@@ -7,19 +7,30 @@ const Footer = () => {
             <div className='screen-max-width'>
                 <div>
                     <p className='font-semibold text-gray text-xs'>
-                        More ways to shop: {' '} 
-                        <span className='underline text-blue'>
+                        More ways to shop:{' '}
+                        <a
+                            href="#"
+                            onClick={(e) => e.preventDefault()}
+                            className='text-blue hover:underline cursor-pointer whitespace-nowrap'
+                        >
                             Find an Apple Store
-                        </span>
-                        {' '}or{' '}
-                        <span className='underline text-blue'>
+                        </a>
+                        {' or '}
+                        <a
+                            href="#"
+                            onClick={(e) => e.preventDefault()}
+                            className='text-blue hover:underline cursor-pointer whitespace-nowrap'
+                        >
                             other retailer
-                        </span>
+                        </a>
                         {' '}near you.
                     </p>
 
                     <p className='font-semibold text-gray text-xs mt-2'>
-                        Or call 000000-000-0000
+                        Or call {' '}
+                        <span className='text-blue'>
+                            000000-000-0000
+                        </span>
                     </p>
                 </div>
 
@@ -30,17 +41,20 @@ const Footer = () => {
                         Copyright @ 2024 Apple Inc. All rights reserved.
                     </p>
 
-                    <div className='flex'>
+                    <div className='flex flex-wrap items-center gap-x-2'>
                         {footerLinks.map((link, i) => (
-                            <p 
-                                key={link}
-                                className='font-semibold text-gray text-xs'
-                            >
-                                {link}{' '}
+                            <React.Fragment key={link}>
+                                <a 
+                                    href="#" 
+                                    className='font-semibold text-gray text-xs whitespace-nowrap hover:underline'
+                                    onClick={(e) => e.preventDefault()}
+                                >
+                                    {link}
+                                </a>
                                 {i !== footerLinks.length - 1 && (
-                                <span className="mx-2"> | </span>
+                                    <span className="text-gray text-xs">|</span>
                                 )}
-                            </p>
+                            </React.Fragment>
                         ))}
                     </div>
                 </div>
