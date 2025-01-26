@@ -44,7 +44,6 @@ Vous pouvez consulter la version originale du site via Wayback Machine en suivan
 
 ---
 
-
 ## 🧪 Installation et utilisation
 
 1. Clonez le dépôt sur votre machine locale :
@@ -74,3 +73,7 @@ Vous pouvez consulter la version originale du site via Wayback Machine en suivan
 ```bash
 http://localhost:5173/
 ```
+
+## Feedback
+
+If you have any feedback, please add a issue on the GitHub
