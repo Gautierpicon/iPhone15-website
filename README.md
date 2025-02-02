@@ -69,6 +69,7 @@ git clone https://github.com/Gautierpicon/iPhone15Pro-website.git
 ```bash
   npm run dev
 ```
+
 5. Visit:
 
 ```bash
@@ -76,6 +77,5 @@ http://localhost:5173/
 ```
 
 ## Feedback
-
 
 If you have any feedback, please add a issue on the [GitHub](https://github.com/Gautierpicon/iPhone15Pro-website/issues)
