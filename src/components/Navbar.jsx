@@ -6,7 +6,6 @@ const Navbar = () => {
     return (
         <header className='w-full py-5 sm:pw-10 px-5 flex justify-between items-center'>
             <nav className='flex w-full screen-max-width'>
-                {/* Logo Apple */}
                 <a 
                     href="#" 
                     onClick={(e) => e.preventDefault()}
@@ -20,7 +19,6 @@ const Navbar = () => {
                     />
                 </a>
 
-                {/* Liens de navigation */}
                 <div className='flex flex-1 justify-center max-sm:hidden'>
                     {navLists.map((nav) => (
                         <a
@@ -34,7 +32,6 @@ const Navbar = () => {
                     ))}
                 </div>
 
-                {/* Liens pour la recherche et le panier */}
                 <div className='flex items-baseline gap-7 max-sm:justify-end max-sm:flex-1'>
                     <a 
                         href="#" 

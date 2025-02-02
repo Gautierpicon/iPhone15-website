@@ -5,6 +5,10 @@ import {
     highlightFourthVideo,
     highlightSecondVideo,
     highlightThirdVideo,
+    mobileHighlightFirstImg,
+    mobileHighlightSecImg,
+    mobileHighlightThirdImg,
+    mobileHighlightFourthImg,
     whiteImg,
     yellowImg,
   } from "../utils";
@@ -21,12 +25,14 @@ import {
       ],
       video: highlightFirstVideo,
       videoDuration: 4,
+      image: mobileHighlightFirstImg,
     },
     {
       id: 2,
       textLists: ["Titanium.", "So strong. So light. So Pro."],
       video: highlightSecondVideo,
       videoDuration: 5,
+      image: mobileHighlightSecImg,
     },
     {
       id: 3,
@@ -37,12 +43,14 @@ import {
       ],
       video: highlightThirdVideo,
       videoDuration: 2,
+      image: mobileHighlightThirdImg,
     },
     {
       id: 4,
       textLists: ["All-new Action button.", "What will yours do?"],
       video: highlightFourthVideo,
       videoDuration: 3.63,
+      image: mobileHighlightFourthImg,
     },
   ];
   
