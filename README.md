@@ -48,9 +48,9 @@ You can view the original version of the site via Wayback Machine by following t
 
 1. Clone the repository to your local machine:
 
-  ```bash
-  git clone https://github.com/Gautierpicon/iPhone15Pro-website.git
-  ```
+```bash
+git clone https://github.com/Gautierpicon/iPhone15Pro-website.git
+```
 
 2. Go to the project directory:
 
