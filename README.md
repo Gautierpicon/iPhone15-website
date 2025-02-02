@@ -47,9 +47,10 @@ You can view the original version of the site via Wayback Machine by following t
 ## 🧪 Installation & Usage
 
 1. Clone the repository to your local machine:
-   ```bash
-   git clone https://github.com/Gautierpicon/iPhone15Pro-website.git
-   ```
+
+  ```bash
+  git clone https://github.com/Gautierpicon/iPhone15Pro-website.git
+  ```
 
 2. Go to the project directory:
 
@@ -75,5 +76,6 @@ http://localhost:5173/
 ```
 
 ## Feedback
+
 
 If you have any feedback, please add a issue on the [GitHub](https://github.com/Gautierpicon/iPhone15Pro-website/issues)
